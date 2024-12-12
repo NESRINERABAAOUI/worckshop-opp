@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="my-title">DOM Checkpoint</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      .shopping-Cart {
+        display: flex;
+      }
+
+      .like {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shopping-Cart">
+      <div class="cart1">
+        <button class="delete-btn">X</button>
+        <i class="fa-solid fa-heart"></i>
+        <h3>PHONE 1 ==> <span id="s1">100</span>dt</h3>
+        <img src="/Phone 1.jpg" style="height: 200px" />
+        <div>
+          <button id="p1" onclick="plusClick(this.id)">+</button>
+          <p id="q1">0</p>
+          <button id="m1" onclick="minusClick(this.id)">-</button>
+          <p>Total price for this product = <span id="t1">0</span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="cart2">
+        <button class="delete-btn">X</button>
+        <i class="fa-solid fa-heart"></i>
+        <h3>PHONE 2 ==> <span id="s2">200</span>dt</h3>
+        <img src="/Phone 2.jpg" style="height: 200px" />
+        <div>
+          <button id="p2" onclick="plusClick(this.id)">+</button>
+          <p id="q2">0</p>
+          <button id="m2" onclick="minusClick(this.id)">-</button>
+          <p>Total price for this product = <span id="t2">0</span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="cart3">
+        <button class="delete-btn">X</button>
+        <i class="fa-solid fa-heart"></i>
+        <h3>PHONE 3 ==> <span id="s3">300</span>dt</h3>
+        <img src="/Phone 3.jpg" style="height: 200px" />
+        <div>
+          <button id="p3" onclick="plusClick(this.id)">+</button>
+          <p id="q3">0</p>
+          <button id="m3" onclick="minusClick(this.id)">-</button>
+          <p>Total price for this product = <span id="t3">0</span></p>
+        </div>
+      </div>
+    </main>
+    <center>
+      <p>Total Price of all products = <span id="totalP">0</span></p>
+    </center>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
